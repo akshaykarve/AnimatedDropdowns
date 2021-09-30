@@ -8,10 +8,10 @@ document.addEventListener('click', e => {
     if(isDropdownButton){
         currentDropdown = e.target.closest('[data-dropdown]')
         currentDropdown.classList.toggle('active')
-    } else {
-        document.querySelectorAll('[data-dropdown].active').forEach(dropdown => {
-            if(dropdown === currentDropdown) return
-            dropdown.classList.remove('active')
-        })
-    }
+    } 
+
+    document.querySelectorAll('[data-dropdown].active').forEach(dropdown => {
+        if(dropdown === currentDropdown) return
+        dropdown.classList.remove('active')
+    })
 })
