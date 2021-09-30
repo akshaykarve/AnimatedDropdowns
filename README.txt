@@ -1,0 +1,1 @@
+Start up the index.html with live server.
