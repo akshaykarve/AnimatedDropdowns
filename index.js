@@ -3,7 +3,7 @@ document.addEventListener('click', e => {
 
     if(!isDropdownButton && e.target.closest('[data-dropdown]') !=null) return;
 
-    let currentDropdown
+    let currentDropdown;
 
     if(isDropdownButton){
         currentDropdown = e.target.closest('[data-dropdown]')
